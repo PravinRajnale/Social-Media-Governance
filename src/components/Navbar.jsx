@@ -14,7 +14,7 @@ function Navbar({ name, subname }) {
         <div className="bg-white border-b border-[#D1D5DB] h-18 flex items-center justify-between px-4">
             <div className="flex items-center">
                 <img
-                    src="/DeloitteLogo.png"
+                    src="/Social-Media-Governance/DeloitteLogoblack.png"
                     alt="Deloitte"
                     className="w-30 h-30  cursor-pointer object-contain"
                     onClick={() => navigate('/index')}
