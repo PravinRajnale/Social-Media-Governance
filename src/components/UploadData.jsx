@@ -312,7 +312,7 @@ function UploadData({ setStep, step, setResult }) {
       {
         step: 0,
         message: "Social Data Ingestion Agent",
-        time: 20000,
+        time: 15000,
         details: [
           "Aggregating social conversations from uploaded dataset",
           "Interpreting data structure, format, and metadata",
@@ -324,7 +324,7 @@ function UploadData({ setStep, step, setResult }) {
       {
         step: 1,
         message: "Data Cleaning Agent",
-        time: 25000,
+        time: 13000,
         details: [
           "Eliminating duplicate posts and redundant conversations",
           "Standardizing text structure for consistent analysis",
@@ -337,7 +337,7 @@ function UploadData({ setStep, step, setResult }) {
       {
         step: 2,
         message: "AI Classification & Brand Lens Agent",
-        time: 30000,
+        time: 15000,
         details: [
           "Interpreting customer sentiment across conversations",
           "Structuring discussions into strategic brand categories",
@@ -350,7 +350,7 @@ function UploadData({ setStep, step, setResult }) {
       {
         step: 3,
         message: "Brand Intelligence & Insight Agent",
-        time: 40000,
+        time: 12000,
         details: [
           "Measuring sentiment distribution across governance lenses",
           "Identifying dominant themes and emerging narratives",
@@ -363,7 +363,7 @@ function UploadData({ setStep, step, setResult }) {
       {
         step: 4,
         message: "Reporting Agent",
-        time: 30000,
+        time: 5000,
         details: [
           "Consolidating findings into an executive-ready report",
           "Presenting sentiment and category performance metrics",
