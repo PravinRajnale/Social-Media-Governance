@@ -19,14 +19,15 @@ const PLATFORM_DATA = [
 ];
  
 const CLASSIFICATION_DATA = [
+  {category: "Suspicious Claims & Information",  pct: 2 },
   { category: "Response Accountability",  pct: 25 },
-  { category: "Customer Escalation Signals",          pct: 22 },
+  { category: "Customer Escalation Signals",          pct: 21 },
   { category: "Resolution Orientation",    pct: 18 },
   { category: "Brand Promise Consistency",      pct: 16 },
   { category: "Fraud & Impersonation Signals",         pct: 6 },
   { category: "Tone & Professionalism",       pct: 4 },
   { category: "Transparency & Disclosure",       pct: 3 },
-  { category: "Community Sentiment Shift",     pct: 3 },
+  { category: "Community Sentiment Shift",     pct: 2 },
   { category: "Moderation Governance",        pct: 2 },
   { category: "Misinformation & Clarification",           pct: 1 },
 ];

@@ -24,11 +24,7 @@ function Navbar({ name, subname }) {
 
                 <div className="leading-tight">
                     <h1 className="text-lg font-semibold text-Black">{name}</h1>
-                    {subname && (
-                        <p className="text-xs text-gray-500">
-                            {subname}
-                        </p>
-                    )}
+                    
                 </div>
             </div>
 

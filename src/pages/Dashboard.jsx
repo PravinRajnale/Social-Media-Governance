@@ -2,19 +2,20 @@ import { useState } from "react";
 import ProgressNav from "../components/ProgressNavigation";
 import UploadData from "../components/UploadData";
  
-const ACCENT_COLORS = ["#6366f1", "#10b981", "#f59e0b", "#ef4444", "#8b5cf6"];
+const ACCENT_COLORS = [ "#ef4444","#6366f1", "#10b981", "#f59e0b", "#8b5cf6"];
  
 const COUNT_BADGE_STYLES = [
+  { bg: "#fef2f2", color: "#b91c1c", border: "#fca5a5" },
   { bg: "#f0f0ff", color: "#4f46e5", border: "#c7d2fe" },
   { bg: "#ecfdf5", color: "#047857", border: "#6ee7b7" },
   { bg: "#fffbeb", color: "#b45309", border: "#fcd34d" },
-  { bg: "#fef2f2", color: "#b91c1c", border: "#fca5a5" },
   { bg: "#f5f3ff", color: "#6d28d9", border: "#c4b5fd" },
 ];
  
 // ── Manual per-theme percentages ─────────────────────────────────────────────
 // Add every lens here. Key = exact lens name, value = % array in same order as top_themes.
 const THEME_PCTS = {
+  "Suspicious Claims & Information":[30, 20, 15, 20, 15],
   "Response Accountability": [32, 28, 22, 18],
   "Customer Escalation Signals": [34, 26, 22, 18],
   "Resolution Orientation":[30,26,24,20],
@@ -29,6 +30,7 @@ const THEME_PCTS = {
  
 // Dummy lens definitions for tooltip
 const LENS_DEFINITIONS = {
+  "Suspicious Claims & Information": "Measures the presence of potentially misleading, exaggerated, or unverified information about the brand circulating on social media. This lens evaluates claims made by users, influencers, or unofficial sources that may create confusion, misinformation, or reputational risk if left unaddressed.",
   "Response Accountability": "Measures whether the brand acknowledges customer queries, complaints, or issues in comments and how consistently it provides responses.",
   "Resolution Orientation": "Evaluates whether brand replies attempt to resolve the issue (guidance, support contact, escalation) rather than giving generic responses.",
   "Transparency & Disclosure": "Assesses whether the brand provides clear, honest information in posts and replies, including disclaimers, clarifications, or corrections.",
@@ -218,7 +220,7 @@ function LensCard({ item, index }) {
         {item.top_themes?.map((theme, i) => (
           <div key={i} style={{
             width: "100%",
-            height: 44,
+            height: 48,
             boxSizing: "border-box",
             display: "flex",
             alignItems: "center",
@@ -236,7 +238,7 @@ function LensCard({ item, index }) {
               color: "#374151",
               lineHeight: 1.4,
               display: "-webkit-box",
-              WebkitLineClamp: 2,
+              WebkitLineClamp: 3,
               WebkitBoxOrient: "vertical",
               overflow: "hidden",
             }}>
@@ -358,9 +360,9 @@ function Dashboard() {
   const [step, setStep] = useState(-1);
   const [result, setResult] = useState(null);
   const [bridgeLabels, setBridgeLabels] = useState([
-    "19,671 Rows",
-    "2,701 Clean",
-    "Brand Perception Lenses",
+    "19,671 Social Media Mentions",
+    "2,231 Actionable Mentions",
+    "11 Brand Perception Lenses",
     "Insights",
   ]);
  
