@@ -12,7 +12,7 @@ function App() {
       <div className="min-h-screen bg-[#f5f5f5]">
 
         <Navbar
-          name="Early Signals"
+          name="Brand Perception AI - Early Signals"
           // subname="A tool to analyze brand perception using AI"
         />
 
